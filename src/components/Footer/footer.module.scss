@@ -1,0 +1,11 @@
+@use "../../styles/global.scss";
+
+.header {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.text {
+    @include global.mobileCommonText;
+    line-height: 20px;
+}

@@ -1,0 +1,19 @@
+@use "../../../styles/global.scss";
+
+.header {
+    @include global.mobileHeaderText;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.sliderButtons {
+    display: flex;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+}

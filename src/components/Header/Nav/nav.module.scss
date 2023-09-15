@@ -1,0 +1,36 @@
+@use "./../../../styles/global.scss";
+
+.header {
+    background-color: #fff;
+}
+
+.nav {
+    // color: global.$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    color: #000;
+    // leading-trim: both;
+    // text-edge: cap;
+    // font-family: Integral CF;
+    font-size: 25.2px;
+    font-weight: 700;
+}
+
+

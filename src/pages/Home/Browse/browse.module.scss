@@ -1,0 +1,47 @@
+@use "../../../styles/global.scss";
+
+.browse {
+    margin-top: 50px;
+}
+
+.browseContent {
+    padding: 40px 24px 27px 24px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.header {
+    @include global.mobileHeaderText;
+    text-align: center;
+}
+
+.browseList {
+    margin: 0;
+    margin-top: 25px;
+}
+
+.card {
+    position: relative;
+    min-height: 190px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card:not(:first-child) {
+    margin-top: 15px;
+}
+
+.cardName {
+    position: relative;
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: global.$mobile-caption;
+    z-index: 1;
+}
+
+.cardImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+}

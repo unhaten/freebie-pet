@@ -1,0 +1,80 @@
+@use "../../../styles/global.scss";
+
+.hero {
+    padding: 0;
+    background-color: #f2f0f1;
+}
+
+.heroContent {
+    padding: global.$mobile-padding;
+}
+
+.mainHeader {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 34px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: global.$mobile-text;
+    color: global.$secondary-color;
+    line-height: 20px;
+}
+
+.button {
+    display: block;
+    margin-top: 24px;
+    padding: global.$mobile-button-padding;
+    width: 100%;
+    border: 0;
+    border-radius: global.$border-radius;
+    background-color: global.$primary-color;
+    color: white;
+    font-weight: 500;
+}
+
+.featureList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 27.5px;
+    row-gap: 14px;
+    margin-top: 22px;
+}
+
+.featureItem:first-child {
+    border-right: 1px solid #0000001a;
+}
+
+.featureItem:first-child {
+    padding-right: 27.5px;
+}
+
+.featureUpperText {
+    font-weight: 700;
+    font-size: global.$mobile-caption;
+}
+
+.featureLowerText {
+    color: global.$secondary-color;
+    font-size: global.$mobile-text-sm;
+}
+
+.heroImageBlock {
+}
+
+.heroImage {
+    width: 100%;
+}
+
+.brands {
+    @include global.flex-center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+    row-gap: 22px;
+    margin-top: -5px;
+    padding: 40px 16px;
+    background-color: global.$primary-color;
+}

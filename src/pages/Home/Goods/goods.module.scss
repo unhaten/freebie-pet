@@ -1,0 +1,36 @@
+@use "../../../styles/global.scss";
+
+.goods {
+    margin-top: 50px;
+}
+
+.newArrivals {
+    margin-bottom: 40px;
+}
+
+.arrivalsSlider,
+.sellingSlider {
+    margin-top: 32px;
+}
+
+.arrivalsButton,
+.sellingButton {
+    display: block;
+    margin-top: 24px;
+    padding: global.$mobile-button-padding;
+    width: 100%;
+    border: 1px solid #0000001a;
+    border-radius: global.$border-radius;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: global.$mobile-text;
+}
+
+.topSelling {
+    margin-top: 40px;
+}
+
+.header {
+    @include global.mobileHeaderText;
+    text-align: center;
+}
