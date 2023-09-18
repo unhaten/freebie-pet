@@ -1,7 +1,7 @@
-@use "../../../styles/global.scss";
+@use "../../../styles/prompts.scss";
 
 .header {
-    @include global.mobileHeaderText;
+    @include prompts.mobileHeaderText;
 }
 
 .headerContainer {

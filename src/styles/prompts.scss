@@ -1,0 +1,38 @@
+$primary-color: #000;
+$secondary-color: #00000099;
+
+$pc-header: 36px;
+$tablet-header: 30px;
+$mobile-header: 32px;
+
+$mobile-caption: 24px;
+
+$pc-text: 20px;
+$tablet-text: 18px;
+$mobile-text: 14px;
+
+$mobile-text-sm: 12px;
+
+$pc-padding: 0 100px;
+$mobile-padding: 0 16px;
+
+$mobile-button-padding: 16px 54px;
+
+$border-radius: 62px;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin mobileHeaderText {
+    font-weight: 700;
+    font-size: $mobile-header;
+}
+
+@mixin mobileCommonText {
+    font-weight: 400;
+    font-size: $mobile-text;
+    color: $secondary-color;
+}

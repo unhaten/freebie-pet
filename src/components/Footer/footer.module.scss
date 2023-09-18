@@ -1,4 +1,4 @@
-@use "../../styles/global.scss";
+@use "../../styles/prompts.scss";
 
 .header {
     font-weight: 700;
@@ -6,6 +6,59 @@
 }
 
 .text {
-    @include global.mobileCommonText;
+    margin-top: 10px;
+    @include prompts.mobileCommonText;
     line-height: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.listItem:nth-child(3),
+.listItem:nth-child(4) {
+    margin-top: 24px;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.itemHeader {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: prompts.$mobile-text;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.link {
+    @include prompts.mobileCommonText;
+    line-height: 16px;
+}
+
+.under {
+    margin-top: 20px;
+}
+
+.underText {
+    @include prompts.mobileCommonText;
+    text-align: center;
+}
+
+.payment {
+    @include prompts.flex-center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }

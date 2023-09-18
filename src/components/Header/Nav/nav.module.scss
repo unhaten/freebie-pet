@@ -1,11 +1,11 @@
-@use "./../../../styles/global.scss";
+@use "./../../../styles/prompts.scss";
 
 .header {
     background-color: #fff;
 }
 
 .nav {
-    // color: global.$primary-color;
+    // color: prompts.$primary-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,5 +32,3 @@
     font-size: 25.2px;
     font-weight: 700;
 }
-
-

@@ -1,4 +1,4 @@
-@use "../../../styles/global.scss";
+@use "../../../styles/prompts.scss";
 
 .hero {
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 .heroContent {
-    padding: global.$mobile-padding;
+    padding: prompts.$mobile-padding;
 }
 
 .mainHeader {
@@ -18,19 +18,19 @@
 
 .text {
     margin-top: 20px;
-    font-size: global.$mobile-text;
-    color: global.$secondary-color;
+    font-size: prompts.$mobile-text;
+    color: prompts.$secondary-color;
     line-height: 20px;
 }
 
 .button {
     display: block;
     margin-top: 24px;
-    padding: global.$mobile-button-padding;
+    padding: prompts.$mobile-button-padding;
     width: 100%;
     border: 0;
-    border-radius: global.$border-radius;
-    background-color: global.$primary-color;
+    border-radius: prompts.$border-radius;
+    background-color: prompts.$primary-color;
     color: white;
     font-weight: 500;
 }
@@ -54,12 +54,12 @@
 
 .featureUpperText {
     font-weight: 700;
-    font-size: global.$mobile-caption;
+    font-size: prompts.$mobile-caption;
 }
 
 .featureLowerText {
-    color: global.$secondary-color;
-    font-size: global.$mobile-text-sm;
+    color: prompts.$secondary-color;
+    font-size: prompts.$mobile-text-sm;
 }
 
 .heroImageBlock {
@@ -70,11 +70,11 @@
 }
 
 .brands {
-    @include global.flex-center;
+    @include prompts.flex-center;
     flex-wrap: wrap;
     column-gap: 33px;
     row-gap: 22px;
     margin-top: -5px;
     padding: 40px 16px;
-    background-color: global.$primary-color;
+    background-color: prompts.$primary-color;
 }

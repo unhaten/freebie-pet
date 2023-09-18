@@ -1,40 +1,35 @@
-$primary-color: #000;
-$secondary-color: #00000099;
+@use "./prompts.scss";
 
-$pc-header: 36px;
-$tablet-header: 30px;
-$mobile-header: 32px;
-
-$mobile-caption: 24px;
-
-$pc-text: 20px;
-$tablet-text: 18px;
-$mobile-text: 14px;
-
-$mobile-text-sm: 12px;
-
-$pc-padding: 0 100px;
-$mobile-padding: 0 16px;
-
-$mobile-button-padding: 16px 54px;
-
-$border-radius: 62px;
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@font-face {
+    font-family: "IntegralCF";
+    src: url("../fonts/IntegralCF-Regular.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-@mixin mobileHeaderText {
+@font-face {
+    font-family: "IntegralCF";
+    src: url("../fonts/IntegralCF-Bold.woff2") format("woff2");
     font-weight: 700;
-    font-size: $mobile-header;
+    font-style: normal;
+    font-display: swap;
 }
 
-@mixin mobileCommonText {
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
     font-weight: 400;
-    font-size: $mobile-text;
-    color: $secondary-color;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -44,13 +39,13 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Integral CF, sans-serif;
+    font-family: IntegralCF, sans-serif;
 }
 
 header,
 section,
 footer {
-    padding: $mobile-padding;
+    padding: prompts.$mobile-padding;
 }
 
 ul {
@@ -74,4 +69,8 @@ button {
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-weight: normal;
 }

@@ -1,4 +1,4 @@
-@use "../../../styles/global.scss";
+@use "../../../styles/prompts.scss";
 
 .goods {
     margin-top: 50px;
@@ -17,13 +17,13 @@
 .sellingButton {
     display: block;
     margin-top: 24px;
-    padding: global.$mobile-button-padding;
+    padding: prompts.$mobile-button-padding;
     width: 100%;
     border: 1px solid #0000001a;
-    border-radius: global.$border-radius;
+    border-radius: prompts.$border-radius;
     background-color: #fff;
     font-weight: 500;
-    font-size: global.$mobile-text;
+    font-size: prompts.$mobile-text;
 }
 
 .topSelling {
@@ -31,6 +31,6 @@
 }
 
 .header {
-    @include global.mobileHeaderText;
+    @include prompts.mobileHeaderText;
     text-align: center;
 }

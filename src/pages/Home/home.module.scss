@@ -1,7 +1,7 @@
-@use "../../styles/global.scss";
+@use "../../styles/prompts.scss";
 
 .header {
     font-weight: 700;
-    font-size: global.$mobile-header;
+    font-size: prompts.$mobile-header;
     text-align: center;
 }

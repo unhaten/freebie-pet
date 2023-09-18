@@ -1,4 +1,4 @@
-@use "../../../styles/global.scss";
+@use "../../../styles/prompts.scss";
 
 .browse {
     margin-top: 50px;
@@ -11,7 +11,7 @@
 }
 
 .header {
-    @include global.mobileHeaderText;
+    @include prompts.mobileHeaderText;
     text-align: center;
 }
 
@@ -25,6 +25,7 @@
     min-height: 190px;
     border-radius: 20px;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .card:not(:first-child) {
@@ -34,8 +35,8 @@
 .cardName {
     position: relative;
     padding: 16px 24px;
-    font-weight: 700;
-    font-size: global.$mobile-caption;
+    font-weight: 500;
+    font-size: prompts.$mobile-caption;
     z-index: 1;
 }
 

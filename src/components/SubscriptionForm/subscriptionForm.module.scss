@@ -1,7 +1,21 @@
-@use "../../styles/global.scss";
+@use "../../styles/prompts.scss";
+
+.formContainer {
+    padding: prompts.$mobile-padding;
+}
+
+.form {
+    padding: 32px 24px;
+    background-color: #000;
+    border-radius: 20px;
+}
 
 .header {
-    @include global.headerText;
+    @include prompts.mobileHeaderText;
     color: #fff;
     line-height: 35px;
+}
+
+.inputContainer {
+    padding: 12px 16px;
 }
