@@ -1,5 +1,9 @@
 @use "../../styles/prompts.scss";
 
+.footer {
+    margin-top: 32px;
+}
+
 .header {
     font-weight: 700;
     font-size: 28px;
@@ -59,6 +63,5 @@
 
 .payment {
     @include prompts.flex-center;
-    margin-top: 30px;
     margin-bottom: 40px;
 }

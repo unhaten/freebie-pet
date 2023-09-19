@@ -1,4 +1,9 @@
-const data: Array<object> = [
+interface browseCard {
+    name: string;
+    image: string;
+}
+
+const data: browseCard[] = [
     {
         name: "Casual",
         image: "browse/casual.png",
