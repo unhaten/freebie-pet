@@ -1,4 +1,5 @@
 import styles from "./hero.module.scss";
+import { Link } from "react-router-dom";
 
 import heroImage from "../../../assets/mobile-hero.png";
 import svg1 from "../../../assets/brands/versace-logo.svg";
@@ -19,7 +20,7 @@ const Hero = () => {
                     garments, designed to bring out your individuality and cater
                     to your sense of style.
                 </p>
-                <button className={styles.button}>Shop Now</button>
+                <Link to='shop' className={styles.button}>Shop Now</Link>
                 <ul className={styles.featureList}>
                     <li className={styles.featureItem}>
                         <div className={styles.featureContent}>

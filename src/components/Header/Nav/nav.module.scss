@@ -10,6 +10,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 23px 0;
+
+    svg {
+        path {
+            transition: fill 0.3s ease;
+        }
+    }
 }
 
 .left {
@@ -24,6 +30,10 @@
     gap: 12px;
 }
 
+.searchContainer {
+    position: relative;
+}
+
 .burgerContainer {
     height: 18px;
 }
@@ -35,4 +45,12 @@
     // font-family: Integral CF;
     font-size: 25.2px;
     font-weight: 700;
+}
+
+.iconActive {
+    svg {
+        path {
+            fill: #ff7100;
+        }
+    }
 }

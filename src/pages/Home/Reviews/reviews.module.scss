@@ -10,13 +10,13 @@
 
 .headerContainer {
     display: flex;
-    justify-content: end;
 }
 
 .sliderButtons {
     display: flex;
     align-items: end;
     gap: 16px;
+    margin-left: auto;
 }
 
 .buttonLeft {

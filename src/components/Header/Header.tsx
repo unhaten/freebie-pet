@@ -7,6 +7,7 @@ const Header = () => {
             <header className={styles.header}>
                 <Nav></Nav>
             </header>
+            <div className="line"></div>
         </>
     );
 };

@@ -1,6 +1,56 @@
+@use "../../styles/prompts.scss";
+
 .card {
-    min-height: 200px;
+    width: 200px;
+}
+
+.smallCard {
+    flex-basis: calc(50% - prompts.$mobile-card-gap);
+}
+
+.cardImageContainer {
+    width: auto;
+    height: 200px;
     background-color: #f0eeed;
-    border-radius: 13px;
-    list-style: none;
+    border-radius: 14px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.starRate {
+    font-size: 12px;
+}
+
+.starOverallNumber {
+    color: prompts.$secondary-color;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.initialPrice {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+
+.discount {
+    width: fit-content;
+    padding: 6px 14px;
+    color: #f33;
+    background-color: rgba(255, 51, 51, 0.1);
+    border-radius: 62px;
+    font-size: 10px;
+    font-weight: 500;
 }

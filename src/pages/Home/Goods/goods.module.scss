@@ -10,7 +10,11 @@
 
 .arrivalsSlider,
 .sellingSlider {
+    display: flex;
     margin-top: 32px;
+    width: fit-content;
+    gap: 15px;
+    overflow: hidden;
 }
 
 .arrivalsButton,
@@ -18,12 +22,12 @@
     display: block;
     margin-top: 24px;
     padding: prompts.$mobile-button-padding;
-    width: 100%;
     border: 1px solid #0000001a;
     border-radius: prompts.$border-radius;
     background-color: #fff;
     font-weight: 500;
     font-size: prompts.$mobile-text;
+    text-align: center;
 }
 
 .topSelling {

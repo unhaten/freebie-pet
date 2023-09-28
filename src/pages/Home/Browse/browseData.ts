@@ -1,9 +1,9 @@
-interface browseCard {
+interface IBrowseCard {
     name: string;
     image: string;
 }
 
-const data: browseCard[] = [
+const data: IBrowseCard[] = [
     {
         name: "Casual",
         image: "browse/casual.png",

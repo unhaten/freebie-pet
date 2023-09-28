@@ -1,0 +1,25 @@
+@use "../../styles/prompts.scss";
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoryLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.filterButton {
+    @include prompts.flex-center;
+    padding: 5px;
+    background-color: #f0eeed;
+    border-radius: 50%;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: prompts.$mobile-card-gap;
+}

@@ -36,6 +36,10 @@ body {
     font-family: Satoshi, sans-serif;
 }
 
+main {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3 {
@@ -73,4 +77,9 @@ button {
 
 h4 {
     font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

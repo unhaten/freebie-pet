@@ -27,7 +27,18 @@
 .item {
     padding: 20px 0;
     width: 100%;
-    border: 2px solid black;
     font-size: prompts.$mobile-caption;
+    border-top: 2px solid black;
     text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.item:nth-child(2n) {
+    border-bottom: 2px solid black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    // border-color: white;
 }
