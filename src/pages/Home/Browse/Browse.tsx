@@ -4,8 +4,12 @@ import BrowseCard from "./BrowseCard/BrowseCard";
 import data from "./browseData";
 
 const Browse = () => {
-    const browseCardList = data.map((item) => (
-        <BrowseCard cardName={item.name} image={item.image}></BrowseCard>
+    const browseCardList = data.map((item, index) => (
+        <BrowseCard
+            key={index}
+            cardName={item.name}
+            image={item.image}
+        ></BrowseCard>
     ));
 
     return (

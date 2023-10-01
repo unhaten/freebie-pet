@@ -5,8 +5,8 @@ import certified from "../../../assets/icons/certified.svg";
 import data from "./reviewsData";
 
 const Reviews = () => {
-    const reviews = data.map((item) => (
-        <li className={styles.card}>
+    const reviews = data.map((item, index) => (
+        <li key={index} className={styles.card}>
             <div className={styles.rate}>
                 {item.rate === 5 ? (
                     <>

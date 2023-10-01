@@ -1,4 +1,4 @@
-interface ICard {
+export interface ICardData {
     id: number;
     name: string;
     image: string;
@@ -11,7 +11,7 @@ interface ICard {
     newArrival?: boolean;
 }
 
-const data: ICard[] = [
+const data: ICardData[] = [
     {
         id: 1,
         name: "Levis",

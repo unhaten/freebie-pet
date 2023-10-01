@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import styles from './cardDetail.module.scss'
+// import styles from './cardDetail.module.scss'
 
 import data from '../../../components/Card/cardData';
 
